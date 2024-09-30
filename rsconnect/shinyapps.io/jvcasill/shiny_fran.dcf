@@ -1,0 +1,12 @@
+name: shiny_fran
+title: shiny_fran
+username:
+account: jvcasill
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 352305
+bundleId: 1404344
+url: https://jvcasillas.shinyapps.io/shiny_fran/
+when: 1527826349.57297
+asMultiple: FALSE
+asStatic: FALSE
