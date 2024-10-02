@@ -1,5 +1,20 @@
 library("shiny")
 library("lubridate")
+library("bslib")
+
+# shinylive::export("app", "docs")
+
+theme <- bs_theme(
+  # Controls the default grayscale palette
+  bg = "#fff", fg = "#202123",
+  # Controls the accent (e.g., hyperlink, button, etc) colors
+  primary = "#cc0033", secondary = "#48DAC6",
+  base_font = c("Grandstander", "sans-serif"),
+  code_font = c("Courier", "monospace"),
+  heading_font = "'Helvetica Neue', Helvetica, sans-serif",
+  # Can also add lower-level customization
+  "input-border-color" = "#cc0033"
+)
 
 calc_fran <- function(bw = 180, cj = 200, pu = 20) {
 
@@ -19,7 +34,7 @@ calc_fran <- function(bw = 180, cj = 200, pu = 20) {
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-    
+    theme = theme, 
     # Application title
     titlePanel("Fran time calculator", windowTitle = "Fran time calculator"),
     
