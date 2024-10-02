@@ -21,7 +21,7 @@ calc_fran <- function(bw = 180, cj = 200, pu = 20) {
 ui <- fluidPage(
     
     # Application title
-    titlePanel("Fran time calculator"),
+    titlePanel("Fran time calculator", windowTitle = "Fran time calculator"),
     
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
